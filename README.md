@@ -28,5 +28,19 @@ The format of the expected JSON file is as follows:
 }
 ```
 
-# Example usage:
+# Usage:
+
+Basic tool takes POST URLs and File(s) like this:
+
+```
+$ ./JSONPromPoster -h
+JSON Prom Poster, written by Paul Schou (github.com/pschou/JSONPromPoster)
+
+Usage: ./JSONPromPoster [options...] [file]
+
+Option:
+  --post URL  Endpoint to upload metrics to (use multiple times for multiple endpoints)
+```
+
+# Example:
 ./JSONPromPoster --post http://10.12.128.249:9550/collector/ data.json
